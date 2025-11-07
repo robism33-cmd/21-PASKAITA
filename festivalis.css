@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  border: 2px solid red;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+.text-box0 h4 {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+  padding-top: 30px;
+}
+a {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  leading-trim: NONE;
+  text-decoration: none;
+  line-height: 100%;
+  color: #222222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+/* prirma sekcija main */
+.first {
+  max-width: 1920px;
+  max-height: 880px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(Pirmas.jpg);
+  background-position: center;
+  background-repeat: no repeat;
+  border: 2px solid yellow;
+  background-image: url(Pirmas.jpg);
+  background-size: cover;
+}
+.text-box1 h4 {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 80px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.text-box1 p {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 40px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffffff;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* max-width: 232px;
+  max-height: 52px; */
+  /* padding-top: 10px;
+  left: 717px; */
+  angle: 0 deg;
+  opacity: 1;
+}
+.red {
+  background-color: #eb5757;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  color: #ffffff;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 20px;
+}
+.white {
+  /* width: 232px;
+  height: 52px; */
+  top: 599px;
+  left: 970px;
+  angle: 0 deg;
+  opacity: 1;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #eb5757;
+  padding-top: 20px;
+}
+.text-box2 {
+  display: flex;
+  width: 1920px;
+  height: 132px;
+  angle: 0 deg;
+  opacity: 1;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  background: #eb5757;
+  color: #fff;
+}
+.text-box2 p {
+  width: 100%;
+  padding: 30px 100px;
+}
+/* Antra sekcija */
+.second {
+  max-width: 1920px;
+}
+
+.text-box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 30px;
+}
+h2 {
+  width: 256px;
+  height: 59px;
+  top: 1225px;
+  left: 832px;
+  angle: 0 deg;
+  opacity: 1;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 50px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+p {
+  width: 735px;
+  height: 62px;
+  top: 1327px;
+  left: 592px;
+  angle: 0 deg;
+  opacity: 1;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.cards1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+  /* height: 354px; */
+  top: 1460px;
+  left: 350px;
+  angle: 0 deg;
+  opacity: 1;
+}
+.card1 img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 238px;
+  max-height: 238px;
+  object-fit: cover;
+  top: 1460px;
+  left: 350px;
+  angle: 0 deg;
+  opacity: 1;
+
+  border-radius: 60px;
+  border: 2px solid #ffffff;
+}
+.cards1 .text-box7 {
+  display: flex;
+  flex-direction: column;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
