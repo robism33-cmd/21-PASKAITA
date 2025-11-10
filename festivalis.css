@@ -2,17 +2,21 @@ body {
   margin: 0;
   padding: 0;
   max-width: 1920px;
-  width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
   border: 2px solid red;
 }
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   /* width: 100%; */
-  width: 100vw;
-  max-width: 1920px;
+  padding: 10px 20px;
+  /* width: 100vw;
+  max-width: 1920px; */
   background-color: #fff;
+  flex-wrap: wrap;
 }
 .text-box0 {
   display: flex;
@@ -38,7 +42,8 @@ header {
 header nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center;
+  align-items: center; */
   gap: 15px;
 }
 
@@ -52,6 +57,7 @@ nav a {
   letter-spacing: 1px;
   text-transform: uppercase;
   padding-bottom: 30px;
+  text-align: left;
 }
 
 nav a:hover {
@@ -59,9 +65,6 @@ nav a:hover {
 }
 /* prirma sekcija main */
 .first {
-  /* max-width: 1920px;
-  max-height: 880px; */
-  /* width: 100%; */
   width: 100vw;
   max-width: 1920px;
   margin: 0 auto;
@@ -79,12 +82,23 @@ nav a:hover {
   border: 2px solid yellow;
   background-image: url(Pirmas.jpg);
   background-size: cover;
-  padding-bottom: 250px;
+  /* padding-bottom: 250px; */
+  padding: 150px 20px;
+  text-align: center;
 }
+.text-box1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-box1 h4 {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 80px;
+  /* font-size: 80px; */
+  font-size: 60px;
   line-height: 100%;
   letter-spacing: 2px;
   text-align: center;
@@ -94,7 +108,8 @@ nav a:hover {
 .text-box1 p {
   font-family: Open Sans;
   font-weight: 400;
-  font-size: 40px;
+  /* font-size: 40px; */
+  font-size: 28px;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
@@ -104,6 +119,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
   /* max-width: 232px;
   max-height: 52px; */
@@ -144,6 +160,10 @@ nav a:hover {
 }
 .text-box2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
   /* width: 1920px; */
   max-width: 100%;
   height: 132px;
@@ -194,7 +214,7 @@ nav a:hover {
   margin-bottom: 40px;
   top: 3776px;
   left: 944px;
-  angle: 0 deg;
+
   opacity: 1;
   background: #eb5757;
 }
@@ -212,27 +232,44 @@ nav a:hover {
 
 .cards1 {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+/* display: flex;
+
+  justify-content: center;
   /* padding-left: 95px; */
-  padding-bottom: 20px;
+/* padding: 20px;
   align-items: center;
   flex-wrap: wrap;
-  gap: 200px;
+  gap: 40px; */
 
-  /* width: 59%; */
+/* width: 59%; */
+/* text-align: center; */
+/* height: 354px; */
+/* opacity: 1; */
+*/ .card1 {
+  /* display: flex;
+  flex: 1 1 calc(25%-40px);
+  max-width: 260px;
   text-align: center;
-  /* height: 354px; */
-  opacity: 1;
-}
-.card1 {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   max-width: 238px;
   max-height: 354px;
   padding: 0;
-  margin: 0;
+  margin: 0; 
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+} */
+  flex: 1 1 calc(25% - 40px);
+  max-width: 260px;
+  text-align: center;
 }
 
 .card1 img {
@@ -357,13 +394,12 @@ nav a:hover {
 }
 .cards2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 50px;
-  width: 80%;
+  gap: 20px;
+  /* width: 80%; */
   /* height: 248px; */
-  opacity: 1;
 }
 .cards2 img {
   object-fit: cover;
@@ -706,36 +742,87 @@ ul {
   text-transform: uppercase;
   color: #222222;
 }
-/* Responsivas */
-@media (max-width: 1200px) {
+footer {
+  background: #eb57571a;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Responsyvas nebaigtas darytas mano */
+/* @media (max-width: 1200px) {
   .cards1 {
     gap: 60px;
+    justify-content: flex-start;
   }
   .card1 {
     max-width: 45%;
   }
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .cards1 {
     justify-content: center;
   }
   .card1 {
     max-width: 80%;
   }
-}
-@media (max-width: 600px) {
+} */
+/* @media (max-width: 600px) {
   nav a {
     font-size: 12px;
-  }
-  .buttons {
+  } */
+/* .buttons {
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  .forma1 {
+  } */
+/* .forma1 {
+    width: 100px;
+  } */
+/* .button3 {
     width: 100px;
   }
-  .button3 {
-    width: 100px;
+} */
+/* responsyvas atliktas padedant GPT */
+/*  Mobilus (iki 375px) */
+@media (max-width: 375px) {
+  header nav {
+    flex-direction: column;
+  }
+  .text-box1 h4 {
+    font-size: 34px;
+  }
+  .text-box1 p {
+    font-size: 18px;
+  }
+  .buttons a {
+    width: 100%;
+  }
+  .cards1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*  Planšetės (~795px)  */
+@media (max-width: 795px) {
+  .cards1 {
+    justify-content: center;
+  }
+  .card1 {
+    flex: 1 1 calc(45% - 20px);
+  }
+  .cards2 img {
+    width: 150px;
+    height: 150px;
+  }
+  .text-box1 h4 {
+    font-size: 44px;
+  }
+}
+
+/* Dideli ekranai (virš 1200px) */
+@media (min-width: 1200px) {
+  .card1 {
+    flex: 1 1 calc(25% - 40px);
   }
 }
